@@ -328,7 +328,6 @@ body {
   fill: var(--second-basic-color);
   background-color: var(--accent-color);
 }
-
 /*----------------------CLIENTS------------------------*/
 .clients-list {
   display: flex;
