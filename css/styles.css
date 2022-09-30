@@ -304,7 +304,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 44px;
   height: 44px;
   margin: 0;
@@ -321,16 +320,11 @@ body {
   height: 44px;
   width: 44px;
   border-radius: 50%;
-}
-
-.team-icon {
   fill: var(--icon-color);
 }
 
 .team-link-icon:hover,
-.team-link-icon:focus,
-.team-icon:hover,
-.team-icon:focus {
+.team-link-icon:focus {
   fill: var(--second-basic-color);
   background-color: var(--accent-color);
 }
@@ -354,7 +348,8 @@ body {
   fill: var(--icon-color);
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   fill: var(--accent-color);
   background-color: var(--second-basic-color);
   border-color: var(--accent-color);
@@ -432,7 +427,7 @@ body {
 }
 
 .follow-link:hover,
-.folloe-link:focus {
+.follow-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -444,16 +439,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-/*.follow-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer {
-  display: flex;
-  align-items: baseline;
-}*/
 
 /*---------------PORTFOLIO-------------------*/
 .visually-hidden {
@@ -513,11 +498,6 @@ body {
   width: calc((100% - 60px) / 3);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 .portfolio-subject {
   font-weight: 700;
   font-size: 18px;
@@ -537,4 +517,12 @@ body {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+.portfolio-link {
+  display: inline-block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
